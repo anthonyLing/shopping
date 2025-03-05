@@ -1,0 +1,15 @@
+2025-03-05 21:58:07.005 [main] INFO  com.zbkj.front.CrmebFrontApplication - Starting CrmebFrontApplication on LAPTOP-7H9CJ0H5 with PID 5200 (F:\shopping\java-master\crmeb-front\target\classes started by Administrator in F:\shopping\java-master\crmeb-front)
+2025-03-05 21:58:07.007 [main] INFO  com.zbkj.front.CrmebFrontApplication - No active profile set, falling back to default profiles: default
+2025-03-05 21:58:09.434 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-03-05 21:58:09.437 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-03-05 21:58:09.471 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14ms. Found 0 Redis repository interfaces.
+2025-03-05 21:58:14.559 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2025-03-05 21:58:14.573 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-03-05 21:58:14.575 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-05 21:58:14.575 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2025-03-05 21:58:15.083 [main] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-03-05 21:58:15.090 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-05 21:58:15.091 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 8023 ms
+2025-03-05 21:58:32.898 [main] INFO  org.redisson.Version - Redisson 3.14.1
+2025-03-05 21:58:43.866 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
+2025-03-05 21:58:43.870 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]

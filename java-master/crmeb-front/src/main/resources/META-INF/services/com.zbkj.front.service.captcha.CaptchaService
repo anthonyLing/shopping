@@ -1,0 +1,3 @@
+com.zbkj.front.service.captcha.impl.BlockPuzzleCaptchaServiceImpl
+com.zbkj.front.service.captcha.impl.ClickWordCaptchaServiceImpl
+com.zbkj.front.service.captcha.impl.DefaultCaptchaServiceImpl

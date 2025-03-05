@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zbkj.service.dao.OrderDao">
+
+    <select id="getProductNumCount" resultType="java.lang.Integer">
+        select IFNULL(sum(od.pay_num),0)
+        from eb_order o
+        left join eb_order_detail od on o.order_no = od.order_no
+        where o.is_del = 0
+        and o.refund_status &lt; 3
+        and o.cancel_status = 0
+        and o.status &lt; 9
+        and o.uid = #{uid}
+        and od.product_id = #{proId}
+        and od.product_type = #{productType}
+    </select>
+
+</mapper>
