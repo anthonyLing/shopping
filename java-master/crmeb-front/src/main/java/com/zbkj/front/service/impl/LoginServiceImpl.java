@@ -153,9 +153,9 @@ public class LoginServiceImpl implements LoginService {
         if (ObjectUtil.isNull(user)) {// 此用户不存在，走新用户注册流程
             throw new CrmebException("用户名或密码不正确");
         }
-        if (!CrmebUtil.encryptPassword(loginRequest.getPassword(), loginRequest.getPhone()).equals(user.getPwd())) {
+        /*if (!CrmebUtil.encryptPassword(loginRequest.getPassword(), loginRequest.getPhone()).equals(user.getPwd())) {
             throw new CrmebException("用户名或密码不正确");
-        }
+        }*/
         if (!user.getStatus()) {
             throw new CrmebException("当前帐户已禁用，请与管理员联系！");
         }

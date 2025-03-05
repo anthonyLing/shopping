@@ -13,3 +13,273 @@
 2025-03-05 21:58:32.898 [main] INFO  org.redisson.Version - Redisson 3.14.1
 2025-03-05 21:58:43.866 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
 2025-03-05 21:58:43.870 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2025-03-05 21:59:36.225 [main] INFO  com.zbkj.front.CrmebFrontApplication - Starting CrmebFrontApplication on LAPTOP-7H9CJ0H5 with PID 26640 (F:\shopping\java-master\crmeb-front\target\classes started by Administrator in F:\shopping\java-master\crmeb-front)
+2025-03-05 21:59:36.226 [main] INFO  com.zbkj.front.CrmebFrontApplication - No active profile set, falling back to default profiles: default
+2025-03-05 21:59:38.697 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-03-05 21:59:38.699 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-03-05 21:59:38.728 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15ms. Found 0 Redis repository interfaces.
+2025-03-05 21:59:43.539 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2025-03-05 21:59:43.552 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-03-05 21:59:43.553 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-05 21:59:43.554 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2025-03-05 21:59:44.031 [main] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-03-05 21:59:44.041 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-05 21:59:44.042 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 7755 ms
+2025-03-05 22:00:01.620 [main] INFO  org.redisson.Version - Redisson 3.14.1
+2025-03-05 22:00:10.395 [redisson-netty-2-21] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for /127.0.0.1:6379
+2025-03-05 22:00:10.433 [redisson-netty-2-19] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for /127.0.0.1:6379
+2025-03-05 22:00:11.326 [main] INFO  c.z.front.config.AjCaptchaServiceAutoConfiguration - 自定义配置项：
+AjCaptchaProperties{type=DEFAULT, jigsaw='', picClick='', waterMark='CRMEB Java', waterFont='WenQuanZhengHei.ttf', fontType='WenQuanZhengHei.ttf', slipOffset='5', aesStatus=true, interferenceOptions='2', cacheNumber='1000', timingClear='180', cacheType=local, reqFrequencyLimitEnable=false, reqGetLockLimit=5, reqGetLockSeconds=300, reqGetMinuteLimit=360, reqCheckMinuteLimit=60, reqVerifyMinuteLimit=60}
+2025-03-05 22:00:11.333 [main] INFO  c.zbkj.front.service.captcha.CaptchaServiceFactory - supported-captchaCache-service:[local]
+2025-03-05 22:00:11.338 [main] INFO  c.zbkj.front.service.captcha.CaptchaServiceFactory - supported-captchaTypes-service:[clickWord, default, blockPuzzle]
+2025-03-05 22:00:11.359 [main] INFO  com.zbkj.common.captcha.util.ImageUtils - 初始化底图:[SLIDING_BLOCK=[Ljava.lang.String;@1a7a21d0, ORIGINAL=[Ljava.lang.String;@bb21063, PIC_CLICK=[Ljava.lang.String;@6821c63c]
+2025-03-05 22:00:11.359 [main] INFO  c.z.f.s.captcha.impl.ClickWordCaptchaServiceImpl - --->>>初始化验证码底图<<<---clickWord
+2025-03-05 22:00:11.548 [main] INFO  c.z.f.s.captcha.impl.ClickWordCaptchaServiceImpl - 初始化local缓存...
+2025-03-05 22:00:11.654 [main] INFO  com.zbkj.common.captcha.util.ImageUtils - 初始化底图:[SLIDING_BLOCK=[Ljava.lang.String;@7736c41e, ORIGINAL=[Ljava.lang.String;@5f911d24, PIC_CLICK=[Ljava.lang.String;@3de383f7]
+2025-03-05 22:00:11.655 [main] INFO  c.z.f.s.captcha.impl.BlockPuzzleCaptchaServiceImpl - --->>>初始化验证码底图<<<---blockPuzzle
+2025-03-05 22:00:11.781 [main] INFO  c.z.f.s.captcha.impl.BlockPuzzleCaptchaServiceImpl - 初始化local缓存...
+2025-03-05 22:00:14.065 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2025-03-05 22:00:14.338 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@67372d20, org.springframework.security.web.context.SecurityContextPersistenceFilter@5d373794, org.springframework.security.web.header.HeaderWriterFilter@73905dff, org.springframework.security.web.authentication.logout.LogoutFilter@5ca3acad, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7c07023, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@396c1228, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@25e24908, org.springframework.security.web.session.SessionManagementFilter@12478b4e, org.springframework.security.web.access.ExceptionTranslationFilter@5400db7e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@ad585fb]
+2025-03-05 22:00:14.363 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2025-03-05 22:00:14.388 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService
+2025-03-05 22:00:14.389 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'taskExecutor'
+2025-03-05 22:00:15.060 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2025-03-05 22:00:15.091 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 2 custom documentation plugin(s)
+2025-03-05 22:00:15.143 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2025-03-05 22:00:15.389 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getListUsingGET_1
+2025-03-05 22:00:15.445 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getListUsingGET_2
+2025-03-05 22:00:15.469 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getListUsingGET_3
+2025-03-05 22:00:15.634 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getListUsingGET_4
+2025-03-05 22:00:15.642 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getListUsingGET_5
+2025-03-05 22:00:15.781 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getIndexInfoUsingGET_1
+2025-03-05 22:00:15.848 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingPOST_1
+2025-03-05 22:00:15.946 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingGET_1
+2025-03-05 22:00:16.006 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getDetailUsingGET_1
+2025-03-05 22:00:16.014 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getListUsingGET_6
+2025-03-05 22:00:16.159 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getProductListUsingGET_1
+2025-03-05 22:00:16.167 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getListUsingGET_7
+2025-03-05 22:00:16.177 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addUsingPOST_1
+2025-03-05 22:00:16.178 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingPOST_2
+2025-03-05 22:00:16.184 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getListUsingGET_8
+2025-03-05 22:00:16.186 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingGET_2
+2025-03-05 22:00:16.240 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingPOST_3
+2025-03-05 22:00:16.245 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getListUsingGET_9
+2025-03-05 22:00:16.317 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2025-03-05 22:00:16.342 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-03-05 22:00:16.379 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2025-03-05 22:00:16.382 [main] INFO  com.zbkj.front.CrmebFrontApplication - Started CrmebFrontApplication in 40.953 seconds (JVM running for 41.813)
+2025-03-05 22:19:55.677 [http-nio-8081-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-05 22:19:55.678 [http-nio-8081-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-05 22:19:55.695 [http-nio-8081-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 17 ms
+2025-03-05 22:19:56.029 [http-nio-8081-exec-4] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.LoginController.tokenIsExist()，prams：[]，cost time：49114400 ns，cost：49 ms
+2025-03-05 22:19:56.276 [http-nio-8081-exec-10] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-03-05 22:19:56.671 [Druid-ConnectionPool-Create-1346532545] INFO  com.alibaba.druid.pool.DruidAbstractDataSource - {dataSource-1} failContinuous is true
+2025-03-05 22:22:47.956 [main] INFO  com.zbkj.front.CrmebFrontApplication - Starting CrmebFrontApplication on LAPTOP-7H9CJ0H5 with PID 17992 (F:\shopping\java-master\crmeb-front\target\classes started by Administrator in F:\shopping\java-master\crmeb-front)
+2025-03-05 22:22:47.957 [main] INFO  com.zbkj.front.CrmebFrontApplication - No active profile set, falling back to default profiles: default
+2025-03-05 22:22:50.728 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-03-05 22:22:50.730 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-03-05 22:22:50.760 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14ms. Found 0 Redis repository interfaces.
+2025-03-05 22:22:56.368 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2025-03-05 22:22:56.389 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-03-05 22:22:56.390 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-05 22:22:56.390 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2025-03-05 22:22:56.861 [main] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-03-05 22:22:56.871 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-05 22:22:56.871 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 8855 ms
+2025-03-05 22:23:15.055 [main] INFO  org.redisson.Version - Redisson 3.14.1
+2025-03-05 22:23:23.167 [redisson-netty-2-15] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for /127.0.0.1:6379
+2025-03-05 22:23:23.204 [redisson-netty-2-19] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for /127.0.0.1:6379
+2025-03-05 22:23:24.022 [main] INFO  c.z.front.config.AjCaptchaServiceAutoConfiguration - 自定义配置项：
+AjCaptchaProperties{type=DEFAULT, jigsaw='', picClick='', waterMark='CRMEB Java', waterFont='WenQuanZhengHei.ttf', fontType='WenQuanZhengHei.ttf', slipOffset='5', aesStatus=true, interferenceOptions='2', cacheNumber='1000', timingClear='180', cacheType=local, reqFrequencyLimitEnable=false, reqGetLockLimit=5, reqGetLockSeconds=300, reqGetMinuteLimit=360, reqCheckMinuteLimit=60, reqVerifyMinuteLimit=60}
+2025-03-05 22:23:24.065 [main] INFO  c.zbkj.front.service.captcha.CaptchaServiceFactory - supported-captchaCache-service:[local]
+2025-03-05 22:23:24.070 [main] INFO  c.zbkj.front.service.captcha.CaptchaServiceFactory - supported-captchaTypes-service:[clickWord, default, blockPuzzle]
+2025-03-05 22:23:24.098 [main] INFO  com.zbkj.common.captcha.util.ImageUtils - 初始化底图:[SLIDING_BLOCK=[Ljava.lang.String;@180f33b2, ORIGINAL=[Ljava.lang.String;@391e85df, PIC_CLICK=[Ljava.lang.String;@48c3a0ef]
+2025-03-05 22:23:24.099 [main] INFO  c.z.f.s.captcha.impl.ClickWordCaptchaServiceImpl - --->>>初始化验证码底图<<<---clickWord
+2025-03-05 22:23:24.237 [main] INFO  c.z.f.s.captcha.impl.ClickWordCaptchaServiceImpl - 初始化local缓存...
+2025-03-05 22:23:24.326 [main] INFO  com.zbkj.common.captcha.util.ImageUtils - 初始化底图:[SLIDING_BLOCK=[Ljava.lang.String;@5a58db42, ORIGINAL=[Ljava.lang.String;@217fd3c, PIC_CLICK=[Ljava.lang.String;@69ac5752]
+2025-03-05 22:23:24.326 [main] INFO  c.z.f.s.captcha.impl.BlockPuzzleCaptchaServiceImpl - --->>>初始化验证码底图<<<---blockPuzzle
+2025-03-05 22:23:24.416 [main] INFO  c.z.f.s.captcha.impl.BlockPuzzleCaptchaServiceImpl - 初始化local缓存...
+2025-03-05 22:23:26.568 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2025-03-05 22:23:26.864 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@27691ee8, org.springframework.security.web.context.SecurityContextPersistenceFilter@2a9e7b4d, org.springframework.security.web.header.HeaderWriterFilter@3c5bb37d, org.springframework.security.web.authentication.logout.LogoutFilter@67baa05, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4e1104f4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@623ded82, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@78a34c47, org.springframework.security.web.session.SessionManagementFilter@29ae2517, org.springframework.security.web.access.ExceptionTranslationFilter@9715d26, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@b75f3f4]
+2025-03-05 22:23:26.883 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2025-03-05 22:23:26.989 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService
+2025-03-05 22:23:26.991 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'taskExecutor'
+2025-03-05 22:23:27.721 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2025-03-05 22:23:27.749 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 2 custom documentation plugin(s)
+2025-03-05 22:23:27.793 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2025-03-05 22:23:28.033 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getListUsingGET_1
+2025-03-05 22:23:28.087 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getListUsingGET_2
+2025-03-05 22:23:28.105 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getListUsingGET_3
+2025-03-05 22:23:28.267 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getListUsingGET_4
+2025-03-05 22:23:28.278 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getListUsingGET_5
+2025-03-05 22:23:28.402 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getIndexInfoUsingGET_1
+2025-03-05 22:23:28.462 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingPOST_1
+2025-03-05 22:23:28.539 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingGET_1
+2025-03-05 22:23:28.590 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getDetailUsingGET_1
+2025-03-05 22:23:28.595 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getListUsingGET_6
+2025-03-05 22:23:28.756 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getProductListUsingGET_1
+2025-03-05 22:23:28.763 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getListUsingGET_7
+2025-03-05 22:23:28.774 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addUsingPOST_1
+2025-03-05 22:23:28.775 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingPOST_2
+2025-03-05 22:23:28.780 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getListUsingGET_8
+2025-03-05 22:23:28.781 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingGET_2
+2025-03-05 22:23:28.824 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingPOST_3
+2025-03-05 22:23:28.831 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getListUsingGET_9
+2025-03-05 22:23:28.923 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2025-03-05 22:23:28.936 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-03-05 22:23:29.313 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2025-03-05 22:23:29.317 [main] INFO  com.zbkj.front.CrmebFrontApplication - Started CrmebFrontApplication in 42.229 seconds (JVM running for 43.262)
+2025-03-05 22:25:31.108 [http-nio-8081-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-05 22:25:31.109 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-05 22:25:31.126 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 17 ms
+2025-03-05 22:25:31.333 [http-nio-8081-exec-4] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.LoginController.tokenIsExist()，prams：[]，cost time：61600000 ns，cost：61 ms
+2025-03-05 22:25:31.513 [http-nio-8081-exec-9] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-03-05 22:25:32.013 [http-nio-8081-exec-5] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.LoginController.getLoginConfig()，prams：[]，cost time：742652500 ns，cost：742 ms
+2025-03-05 22:25:32.013 [http-nio-8081-exec-6] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.IndexController.getColorConfig()，prams：[]，cost time：742654000 ns，cost：742 ms
+2025-03-05 22:25:32.308 [http-nio-8081-exec-11] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.IndexController.getBottomNavigation()，prams：[]，cost time：1037897800 ns，cost：1037 ms
+2025-03-05 22:25:32.417 [http-nio-8081-exec-8] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.IndexController.getIndexInfo()，prams：[]，cost time：1147206700 ns，cost：1147 ms
+2025-03-05 22:25:32.589 [http-nio-8081-exec-9] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.PageDiyController.info(Integer)，prams：[0]，cost time：1309799600 ns，cost：1309 ms
+2025-03-05 22:25:32.767 [http-nio-8081-exec-18] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.MerchantController.allTypeList()，prams：[]，cost time：45223800 ns，cost：45 ms
+2025-03-05 22:25:32.772 [http-nio-8081-exec-14] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.MerchantController.allCategoryList()，prams：[]，cost time：52415300 ns，cost：52 ms
+2025-03-05 22:25:32.918 [http-nio-8081-exec-19] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.IndexController.getMerchantListByRecomdNum(Integer)，prams：[3]，cost time：187247100 ns，cost：187 ms
+2025-03-05 22:25:38.901 [http-nio-8081-exec-23] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.IndexController.getBottomNavigation()，prams：[]，cost time：14899300 ns，cost：14 ms
+2025-03-05 22:25:39.082 [http-nio-8081-exec-21] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.ProductCategoryController.getCategory()，prams：[]，cost time：224482400 ns，cost：224 ms
+2025-03-05 22:25:40.404 [http-nio-8081-exec-28] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.LoginController.tokenIsExist()，prams：[]，cost time：36900 ns，cost：0 ms
+2025-03-05 22:25:40.406 [http-nio-8081-exec-29] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.LoginController.tokenIsExist()，prams：[]，cost time：34000 ns，cost：0 ms
+2025-03-05 22:25:40.445 [http-nio-8081-exec-3] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.IndexController.getBottomNavigation()，prams：[]，cost time：13835300 ns，cost：13 ms
+2025-03-05 22:25:40.453 [http-nio-8081-exec-1] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：List com.zbkj.front.controller.CommunityController.getAllCategory()，prams：[]，cost time：39203300 ns，cost：39 ms
+2025-03-05 22:25:40.659 [http-nio-8081-exec-30] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonPage com.zbkj.front.controller.CommunityNoteController.findDiscoverNoteList(CommunityNoteFrontDiscoverRequest)，prams：[CommunityNoteFrontDiscoverRequest(title=null, categoryId=null)]，cost time：167394300 ns，cost：167 ms
+2025-03-05 22:25:41.645 [http-nio-8081-exec-2] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.LoginController.tokenIsExist()，prams：[]，cost time：21200 ns，cost：0 ms
+2025-03-05 22:25:41.680 [http-nio-8081-exec-4] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.IndexController.getBottomNavigation()，prams：[]，cost time：11713400 ns，cost：11 ms
+2025-03-05 22:25:41.848 [http-nio-8081-exec-10] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.IndexController.getProductList(Integer,PageParamRequest)，prams：[0, PageParamRequest(page=1, limit=10)]，cost time：171132400 ns，cost：171 ms
+2025-03-05 22:25:42.602 [http-nio-8081-exec-8] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.LoginController.getLoginConfig()，prams：[]，cost time：5360700 ns，cost：5 ms
+2025-03-05 22:25:43.372 [http-nio-8081-exec-5] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：ResponseModel com.zbkj.front.controller.SafetyController.get(CaptchaVO,HttpServletRequest)，prams：[com.zbkj.common.captcha.model.vo.CaptchaVO@456c393d, com.zbkj.common.wrapper.ContentCachingRequestWrapper@246217a7]，cost time：682035600 ns，cost：682 ms
+2025-03-05 22:28:03.857 [http-nio-8081-exec-21] INFO  org.apache.tomcat.util.http.parser.Cookie - A cookie header was received [1739323968,1739408238] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2025-03-05 22:29:32.039 [main] INFO  com.zbkj.front.CrmebFrontApplication - Starting CrmebFrontApplication on LAPTOP-7H9CJ0H5 with PID 19516 (F:\shopping\java-master\crmeb-front\target\classes started by Administrator in F:\shopping\java-master\crmeb-front)
+2025-03-05 22:29:32.042 [main] INFO  com.zbkj.front.CrmebFrontApplication - No active profile set, falling back to default profiles: default
+2025-03-05 22:29:34.950 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-03-05 22:29:34.953 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-03-05 22:29:34.986 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16ms. Found 0 Redis repository interfaces.
+2025-03-05 22:29:40.033 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2025-03-05 22:29:40.047 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-03-05 22:29:40.048 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-05 22:29:40.049 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+2025-03-05 22:29:40.494 [main] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-03-05 22:29:40.501 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-05 22:29:40.501 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 8323 ms
+2025-03-05 22:29:54.521 [main] INFO  org.redisson.Version - Redisson 3.14.1
+2025-03-05 22:30:04.001 [redisson-netty-2-14] INFO  o.r.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for /127.0.0.1:6379
+2025-03-05 22:30:04.039 [redisson-netty-2-19] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for /127.0.0.1:6379
+2025-03-05 22:30:05.357 [main] INFO  c.z.front.config.AjCaptchaServiceAutoConfiguration - 自定义配置项：
+AjCaptchaProperties{type=DEFAULT, jigsaw='', picClick='', waterMark='CRMEB Java', waterFont='WenQuanZhengHei.ttf', fontType='WenQuanZhengHei.ttf', slipOffset='5', aesStatus=true, interferenceOptions='2', cacheNumber='1000', timingClear='180', cacheType=local, reqFrequencyLimitEnable=false, reqGetLockLimit=5, reqGetLockSeconds=300, reqGetMinuteLimit=360, reqCheckMinuteLimit=60, reqVerifyMinuteLimit=60}
+2025-03-05 22:30:05.367 [main] INFO  c.zbkj.front.service.captcha.CaptchaServiceFactory - supported-captchaCache-service:[local]
+2025-03-05 22:30:05.374 [main] INFO  c.zbkj.front.service.captcha.CaptchaServiceFactory - supported-captchaTypes-service:[clickWord, default, blockPuzzle]
+2025-03-05 22:30:05.406 [main] INFO  com.zbkj.common.captcha.util.ImageUtils - 初始化底图:[SLIDING_BLOCK=[Ljava.lang.String;@24f3fb87, ORIGINAL=[Ljava.lang.String;@c7673ae, PIC_CLICK=[Ljava.lang.String;@113c4ad6]
+2025-03-05 22:30:05.406 [main] INFO  c.z.f.s.captcha.impl.ClickWordCaptchaServiceImpl - --->>>初始化验证码底图<<<---clickWord
+2025-03-05 22:30:05.550 [main] INFO  c.z.f.s.captcha.impl.ClickWordCaptchaServiceImpl - 初始化local缓存...
+2025-03-05 22:30:05.694 [main] INFO  com.zbkj.common.captcha.util.ImageUtils - 初始化底图:[SLIDING_BLOCK=[Ljava.lang.String;@77e6053, ORIGINAL=[Ljava.lang.String;@7097d921, PIC_CLICK=[Ljava.lang.String;@2a21cbe7]
+2025-03-05 22:30:05.694 [main] INFO  c.z.f.s.captcha.impl.BlockPuzzleCaptchaServiceImpl - --->>>初始化验证码底图<<<---blockPuzzle
+2025-03-05 22:30:05.786 [main] INFO  c.z.f.s.captcha.impl.BlockPuzzleCaptchaServiceImpl - 初始化local缓存...
+2025-03-05 22:30:08.344 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2025-03-05 22:30:08.623 [main] INFO  o.s.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@76eee0b1, org.springframework.security.web.context.SecurityContextPersistenceFilter@6e00d737, org.springframework.security.web.header.HeaderWriterFilter@5c20505f, org.springframework.security.web.authentication.logout.LogoutFilter@2bb84aa5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7d7f966f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1a6a4595, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2119b989, org.springframework.security.web.session.SessionManagementFilter@68fc636a, org.springframework.security.web.access.ExceptionTranslationFilter@57ac236a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@222eda8a]
+2025-03-05 22:30:08.645 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2025-03-05 22:30:08.670 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService
+2025-03-05 22:30:08.671 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'taskExecutor'
+2025-03-05 22:30:09.301 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2025-03-05 22:30:09.324 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 2 custom documentation plugin(s)
+2025-03-05 22:30:09.364 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2025-03-05 22:30:09.592 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getListUsingGET_1
+2025-03-05 22:30:09.645 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getListUsingGET_2
+2025-03-05 22:30:09.666 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getListUsingGET_3
+2025-03-05 22:30:09.834 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getListUsingGET_4
+2025-03-05 22:30:09.842 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getListUsingGET_5
+2025-03-05 22:30:09.951 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getIndexInfoUsingGET_1
+2025-03-05 22:30:10.016 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingPOST_1
+2025-03-05 22:30:10.101 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingGET_1
+2025-03-05 22:30:10.161 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getDetailUsingGET_1
+2025-03-05 22:30:10.168 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getListUsingGET_6
+2025-03-05 22:30:10.289 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getProductListUsingGET_1
+2025-03-05 22:30:10.294 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getListUsingGET_7
+2025-03-05 22:30:10.300 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addUsingPOST_1
+2025-03-05 22:30:10.301 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingPOST_2
+2025-03-05 22:30:10.307 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getListUsingGET_8
+2025-03-05 22:30:10.309 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: infoUsingGET_2
+2025-03-05 22:30:10.356 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: deleteUsingPOST_3
+2025-03-05 22:30:10.360 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getListUsingGET_9
+2025-03-05 22:30:10.422 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2025-03-05 22:30:10.438 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-03-05 22:30:10.779 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2025-03-05 22:30:10.782 [main] INFO  com.zbkj.front.CrmebFrontApplication - Started CrmebFrontApplication in 39.534 seconds (JVM running for 40.385)
+2025-03-05 22:30:14.657 [http-nio-8081-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-05 22:30:14.658 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-05 22:30:14.673 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 15 ms
+2025-03-05 22:30:15.078 [http-nio-8081-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2025-03-05 22:30:15.431 [http-nio-8081-exec-1] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.LoginController.phonePasswordLogin(LoginPasswordRequest)，prams：[LoginPasswordRequest(phone=18292417675, password=Crmeb@123456, spreadPid=0)]，cost time：508621200 ns，cost：508 ms
+2025-03-05 22:30:15.551 [http-nio-8081-exec-4] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.LoginController.tokenIsExist()，prams：[]，cost time：24511600 ns，cost：24 ms
+2025-03-05 22:30:15.680 [http-nio-8081-exec-5] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.CartController.count(CartNumRequest)，prams：[CartNumRequest(type=sum, numType=true)]，cost time：83018600 ns，cost：83 ms
+2025-03-05 22:30:15.683 [http-nio-8081-exec-12] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.CartController.getList(Boolean)，prams：[false]，cost time：90553600 ns，cost：90 ms
+2025-03-05 22:30:15.687 [http-nio-8081-exec-10] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.CartController.getList(Boolean)，prams：[true]，cost time：96483300 ns，cost：96 ms
+2025-03-05 22:30:15.828 [http-nio-8081-exec-9] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.IndexController.getBottomNavigation()，prams：[]，cost time：267139400 ns，cost：267 ms
+2025-03-05 22:30:15.877 [http-nio-8081-exec-8] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.IndexController.getProductList(Integer,PageParamRequest)，prams：[0, PageParamRequest(page=1, limit=10)]，cost time：281189800 ns，cost：281 ms
+2025-03-05 22:30:15.907 [http-nio-8081-exec-13] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.IndexController.getProductList(Integer,PageParamRequest)，prams：[0, PageParamRequest(page=1, limit=10)]，cost time：21938400 ns，cost：21 ms
+2025-03-05 22:30:21.244 [http-nio-8081-exec-19] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.IndexController.getBottomNavigation()，prams：[]，cost time：22443300 ns，cost：22 ms
+2025-03-05 22:30:21.307 [http-nio-8081-exec-17] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.IndexController.getIndexInfo()，prams：[]，cost time：89344600 ns，cost：89 ms
+2025-03-05 22:30:21.684 [http-nio-8081-exec-18] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.PageDiyController.info(Integer)，prams：[0]，cost time：459442100 ns，cost：459 ms
+2025-03-05 22:30:21.784 [http-nio-8081-exec-27] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.MerchantController.allTypeList()，prams：[]，cost time：29948100 ns，cost：29 ms
+2025-03-05 22:30:21.788 [http-nio-8081-exec-25] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.MerchantController.allCategoryList()，prams：[]，cost time：33808800 ns，cost：33 ms
+2025-03-05 22:30:21.860 [http-nio-8081-exec-26] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.IndexController.getMerchantListByRecomdNum(Integer)，prams：[3]，cost time：104344800 ns，cost：104 ms
+2025-03-05 22:30:24.390 [http-nio-8081-exec-30] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.IndexController.getBottomNavigation()，prams：[]，cost time：25601000 ns，cost：25 ms
+2025-03-05 22:30:24.414 [http-nio-8081-exec-29] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.ProductCategoryController.getCategory()，prams：[]，cost time：68680400 ns，cost：68 ms
+2025-03-05 22:30:25.774 [http-nio-8081-exec-7] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.LoginController.tokenIsExist()，prams：[]，cost time：508200 ns，cost：0 ms
+2025-03-05 22:30:25.775 [http-nio-8081-exec-4] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.LoginController.tokenIsExist()，prams：[]，cost time：379000 ns，cost：0 ms
+2025-03-05 22:30:25.796 [http-nio-8081-exec-12] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.IndexController.getBottomNavigation()，prams：[]，cost time：10206100 ns，cost：10 ms
+2025-03-05 22:30:25.814 [http-nio-8081-exec-11] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：List com.zbkj.front.controller.CommunityController.getAllCategory()，prams：[]，cost time：38654700 ns，cost：38 ms
+2025-03-05 22:30:25.831 [http-nio-8081-exec-9] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonPage com.zbkj.front.controller.CommunityNoteController.findFollowNoteList(PageParamRequest)，prams：[PageParamRequest(page=1, limit=10)]，cost time：31776500 ns，cost：31 ms
+2025-03-05 22:30:25.840 [http-nio-8081-exec-10] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonPage com.zbkj.front.controller.CommunityNoteController.findDiscoverNoteList(CommunityNoteFrontDiscoverRequest)，prams：[CommunityNoteFrontDiscoverRequest(title=null, categoryId=null)]，cost time：49281100 ns，cost：49 ms
+2025-03-05 22:30:26.349 [http-nio-8081-exec-13] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonPage com.zbkj.front.controller.CommunityController.recommendAuthorList(PageParamRequest)，prams：[PageParamRequest(page=1, limit=10)]，cost time：35457000 ns，cost：35 ms
+2025-03-05 22:30:27.231 [http-nio-8081-exec-18] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.CartController.getList(Boolean)，prams：[false]，cost time：3755900 ns，cost：3 ms
+2025-03-05 22:30:27.231 [http-nio-8081-exec-17] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.CartController.getList(Boolean)，prams：[true]，cost time：4024800 ns，cost：4 ms
+2025-03-05 22:30:27.234 [http-nio-8081-exec-19] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.CartController.count(CartNumRequest)，prams：[CartNumRequest(type=sum, numType=true)]，cost time：7315000 ns，cost：7 ms
+2025-03-05 22:30:27.273 [http-nio-8081-exec-22] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.IndexController.getProductList(Integer,PageParamRequest)，prams：[0, PageParamRequest(page=1, limit=10)]，cost time：25060800 ns，cost：25 ms
+2025-03-05 22:30:29.215 [http-nio-8081-exec-24] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.LoginController.tokenIsExist()，prams：[]，cost time：443000 ns，cost：0 ms
+2025-03-05 22:30:29.228 [http-nio-8081-exec-30] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.IndexController.getCopyrightCompanyImage()，prams：[]，cost time：4963700 ns，cost：4 ms
+2025-03-05 22:30:29.267 [http-nio-8081-exec-2] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.IndexController.getBottomNavigation()，prams：[]，cost time：12651300 ns，cost：12 ms
+2025-03-05 22:30:29.298 [http-nio-8081-exec-29] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.CityController.getList(CitySearchRequest)，prams：[CitySearchRequest(regionType=null, parentId=null)]，cost time：69370100 ns，cost：69 ms
+2025-03-05 22:30:29.338 [http-nio-8081-exec-28] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.UserCenterController.getUserCenterOrderNum()，prams：[]，cost time：116210000 ns，cost：116 ms
+2025-03-05 22:30:29.386 [http-nio-8081-exec-21] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.UserCenterController.getUserCenterInfo()，prams：[]，cost time：163326300 ns，cost：163 ms
+2025-03-05 22:30:31.156 [http-nio-8081-exec-6] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.CouponController.getCouponCenter(CouponCenterSearchRequest)，prams：[CouponCenterSearchRequest(category=0, keywords=null)]，cost time：167866900 ns，cost：167 ms
+2025-03-05 22:30:35.587 [http-nio-8081-exec-4] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.CouponController.getCouponCenter(CouponCenterSearchRequest)，prams：[CouponCenterSearchRequest(category=3, keywords=null)]，cost time：9399700 ns，cost：9 ms
+2025-03-05 22:30:36.895 [http-nio-8081-exec-12] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.CouponController.getCouponCenter(CouponCenterSearchRequest)，prams：[CouponCenterSearchRequest(category=0, keywords=null)]，cost time：5973700 ns，cost：5 ms
+2025-03-05 22:30:37.603 [http-nio-8081-exec-9] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.CouponController.getCouponCenter(CouponCenterSearchRequest)，prams：[CouponCenterSearchRequest(category=6, keywords=null)]，cost time：8237700 ns，cost：8 ms
+2025-03-05 22:30:38.880 [http-nio-8081-exec-16] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.IndexController.getCopyrightCompanyImage()，prams：[]，cost time：3360900 ns，cost：3 ms
+2025-03-05 22:30:38.910 [http-nio-8081-exec-14] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.UserCenterController.getUserCenterOrderNum()，prams：[]，cost time：32819900 ns，cost：32 ms
+2025-03-05 22:30:38.930 [http-nio-8081-exec-15] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.UserCenterController.getUserCenterInfo()，prams：[]，cost time：52187400 ns，cost：52 ms
+2025-03-05 22:30:46.774 [http-nio-8081-exec-17] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.SignController.getPageInfo(String)，prams：[2025-03]，cost time：166894000 ns，cost：166 ms
+2025-03-05 22:30:50.179 [http-nio-8081-exec-25] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.IndexController.getCopyrightCompanyImage()，prams：[]，cost time：3761700 ns，cost：3 ms
+2025-03-05 22:30:50.198 [http-nio-8081-exec-27] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.UserCenterController.getUserCenterOrderNum()，prams：[]，cost time：22000300 ns，cost：22 ms
+2025-03-05 22:30:50.213 [http-nio-8081-exec-23] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.UserCenterController.getUserCenterInfo()，prams：[]，cost time：36035800 ns，cost：36 ms
+2025-03-05 22:30:51.978 [http-nio-8081-exec-1] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.IndexController.getProductList(Integer,PageParamRequest)，prams：[0, PageParamRequest(page=1, limit=10)]，cost time：13740600 ns，cost：13 ms
+2025-03-05 22:30:51.998 [http-nio-8081-exec-30] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.UserCenterController.getMyAccount()，prams：[]，cost time：35888600 ns，cost：35 ms
+2025-03-05 22:30:54.980 [http-nio-8081-exec-28] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.IndexController.getCopyrightCompanyImage()，prams：[]，cost time：4001800 ns，cost：4 ms
+2025-03-05 22:30:54.994 [http-nio-8081-exec-29] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.UserCenterController.getUserCenterOrderNum()，prams：[]，cost time：21846700 ns，cost：21 ms
+2025-03-05 22:30:55.008 [http-nio-8081-exec-2] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.UserCenterController.getUserCenterInfo()，prams：[]，cost time：36406500 ns，cost：36 ms
+2025-03-05 22:31:05.923 [http-nio-8081-exec-5] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.CartController.getList(Boolean)，prams：[false]，cost time：3601900 ns，cost：3 ms
+2025-03-05 22:31:05.924 [http-nio-8081-exec-4] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.CartController.getList(Boolean)，prams：[true]，cost time：3690800 ns，cost：3 ms
+2025-03-05 22:31:05.924 [http-nio-8081-exec-7] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.CartController.count(CartNumRequest)，prams：[CartNumRequest(type=sum, numType=true)]，cost time：3356900 ns，cost：3 ms
+2025-03-05 22:31:05.972 [http-nio-8081-exec-11] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.IndexController.getProductList(Integer,PageParamRequest)，prams：[0, PageParamRequest(page=1, limit=10)]，cost time：26842500 ns，cost：26 ms
+2025-03-05 22:31:10.660 [http-nio-8081-exec-10] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.CartController.getList(Boolean)，prams：[true]，cost time：2831100 ns，cost：2 ms
+2025-03-05 22:31:10.660 [http-nio-8081-exec-9] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.CartController.count(CartNumRequest)，prams：[CartNumRequest(type=sum, numType=true)]，cost time：2654200 ns，cost：2 ms
+2025-03-05 22:31:10.660 [http-nio-8081-exec-8] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.CartController.getList(Boolean)，prams：[false]，cost time：2984300 ns，cost：2 ms
+2025-03-05 22:31:10.698 [http-nio-8081-exec-13] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.IndexController.getProductList(Integer,PageParamRequest)，prams：[0, PageParamRequest(page=1, limit=10)]，cost time：18618500 ns，cost：18 ms
+2025-03-05 22:31:12.282 [http-nio-8081-exec-17] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.IndexController.getCopyrightCompanyImage()，prams：[]，cost time：3211200 ns，cost：3 ms
+2025-03-05 22:31:12.307 [http-nio-8081-exec-20] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.UserCenterController.getUserCenterOrderNum()，prams：[]，cost time：25919700 ns，cost：25 ms
+2025-03-05 22:31:12.315 [http-nio-8081-exec-18] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.UserCenterController.getUserCenterInfo()，prams：[]，cost time：34143800 ns，cost：34 ms
+2025-03-05 22:31:13.736 [http-nio-8081-exec-22] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.OrderController.orderList(Integer,PageParamRequest)，prams：[0, PageParamRequest(page=1, limit=20)]，cost time：19936300 ns，cost：19 ms
+2025-03-05 22:31:15.124 [http-nio-8081-exec-23] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.IndexController.getCopyrightCompanyImage()，prams：[]，cost time：2974800 ns，cost：2 ms
+2025-03-05 22:31:15.139 [http-nio-8081-exec-27] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.UserCenterController.getUserCenterOrderNum()，prams：[]，cost time：16968900 ns，cost：16 ms
+2025-03-05 22:31:15.150 [http-nio-8081-exec-25] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.UserCenterController.getUserCenterInfo()，prams：[]，cost time：28174300 ns，cost：28 ms
+2025-03-05 22:31:16.075 [http-nio-8081-exec-24] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.OrderController.orderList(Integer,PageParamRequest)，prams：[3, PageParamRequest(page=1, limit=20)]，cost time：5835400 ns，cost：5 ms
+2025-03-05 22:31:17.765 [http-nio-8081-exec-21] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.IndexController.getCopyrightCompanyImage()，prams：[]，cost time：2708200 ns，cost：2 ms
+2025-03-05 22:31:17.778 [http-nio-8081-exec-2] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.UserCenterController.getUserCenterOrderNum()，prams：[]，cost time：15277600 ns，cost：15 ms
+2025-03-05 22:31:17.798 [http-nio-8081-exec-29] INFO  com.zbkj.front.aspect.ControllerAspect - Controller method：CommonResult com.zbkj.front.controller.UserCenterController.getUserCenterInfo()，prams：[]，cost time：35582500 ns，cost：35 ms
